@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloPrueba.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Editorial Municipal</title>  
+</head>
+
+<body>
+    
+
+    <div id="grilla">
+
+    
+        <nav>
+            <!--Clase bootstrap para alinear elementos dentro de la barra de nav-->
+            <ul class="d-flex align-items-center">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="institucional.html">Institucional</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="convocatorias.html">Convocatorias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!--BLOQUE BEM 1-->
+            <section class="section">
+                <article class="section__articulo">
+                    <h3 class="section__titulo">La Feria del Libro en la Comarca</h3>
+                    <p class="section__parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        
+                    </p>
+                </article>
+                
+                <article class="section__articulo">
+                    <h3 class="section__titulo">Se eligió al Consejo Asesor de la Editorial Municipal</h3>
+                    <p class="section__parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                    </p>
+                </article>
+            </section>
+
+            
+            <!--Carrusel de imágenes-->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/libros.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/reunion_editorial.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+        </main>
+
+        <!--BLOQUE BEM 2 CON ESTILO EN SASS-->
+        <footer class="footer">
+            <div class="footer__redes">
+                <a href=https://www.facebook.com/Editorial-Municipal-Viedma-106498168261011><img class="footer__img" src="img/facebook.svg"/></a>
+                <a href="https://www.instagram.com/editorialvied/"><img class="footer__img" src="img/instagram.svg"/></a>
+
+            </div>
+        </footer>
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

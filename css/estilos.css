@@ -1,0 +1,348 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Poppins;
+    
+}
+/*TÍTULOS*/
+h1{
+    color: #204051;
+    
+}
+
+h2{
+    color: #3b6978;
+    font-size: 12px;
+    
+}
+
+
+
+
+img{
+    width: 100%;
+    height: auto;
+    
+}
+
+/*TABLA*/
+#encabezadosTabla{
+    color: #34656d;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #34656d;
+}
+
+td{
+    width: 30%;
+    padding: 30px;
+}
+th{
+    padding:30px;
+}
+table{
+    margin:30px;
+    
+}
+
+
+td ul li{
+    list-style-type:none ;
+    list-style-position: inside;
+    margin:0;
+    padding:0;
+    
+    
+}
+table p{
+    font-size: 14px;
+}
+/* Colorea filas de la tabla alternadamente (una sí y otra no)*/
+tr:nth-child(even){background-color: #eeeeee;}
+
+ol{
+    margin:0;
+    padding:0;
+    list-style-position: inside;
+    list-style-type:none;
+    
+}
+/*FIN TABLA*/
+
+
+/*BARRA NAVEGACIÓN*/
+nav{
+    background-color: #cae8d5;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: space-evenly;
+    
+    height: 100%;
+}
+
+nav ul li{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+li a {
+    color: #204051;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #84a9ac;
+
+}
+/*FIN BARRA NAVEGACIÓN*/
+
+
+#noticias{
+    margin-bottom: 20px;
+    
+}
+
+form{
+    margin: 50px;
+    
+}
+
+fieldset{
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nombreMiembro{
+    font-weight: bold;
+    color: #3b6978;
+}
+
+#descarga{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+
+/*****************GRILLA CELULARES*****************/
+@media only screen and (max-width:600px){
+
+    /* GRILLA INDEX, CONVOCATORIAS Y CONTACTO*/
+    #grilla{
+        display:grid;
+        grid-template-columns: 100% ;
+        grid-template-areas: 
+                             "menu"
+                             "contenido"
+                             "footer";
+        row-gap:20px;
+    }
+
+
+
+    ul{
+        flex-direction: column;
+        
+    }
+    li{
+        font-size: 14px;
+    }
+  
+    nav{
+        grid-area: menu;
+        
+    }
+    
+    main{
+        grid-area: contenido;
+        padding: 20px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+    .aside{
+        font-size: 12px;
+    }
+
+    /*INSTITUCIONAL*/
+    #grillaInstitucional{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "menu" 
+                                "editorial"
+                             "autoridades"
+                             "equipo"
+                             "footer";
+        row-gap: 10px;
+        column-gap: 10px;
+        
+    }
+
+    .aside{
+        grid-area: aside;
+    }
+
+    #textoInstitucional{
+        grid-area: editorial;
+        padding: 20px;
+    }
+
+    #autoridades{
+        grid-area: autoridades;
+        background-color: #cae8d5;
+        padding: 20px;
+        font-size: 12px;
+    }
+    #equipo{
+        grid-area:equipo;
+        background-color: #cae8d5;
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    /*CATALOGO*/
+    #grillaCatalogo{
+        display:grid;
+        grid-template-columns: 100% ;
+        grid-template-areas: 
+                             "menu"
+                             "contenido"
+                             "aside"
+                             "footer";
+        row-gap:20px;
+    }
+   
+}
+
+/*****************GRILLA COMPUTADORAS*****************/
+@media only screen and (min-width: 600px){
+    
+    /*GRILLA INDEX, CONVOCATORIAS, CATÁLOGO, CONTACTO*/
+    #grilla{
+        display:grid;
+        grid-template-columns: 100% ;
+        grid-template-areas: 
+                             "menu"
+                             "contenido"
+                             "footer";
+        row-gap:20px;
+    }
+
+    /*INDEX IMÁGENES*/
+    #grillaFotos{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "foto1 foto2"
+                             "foto3 foto4"
+                              ;
+        column-gap: 20px;
+        row-gap:20px;
+       
+    }
+    
+    .fotos{
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    /*TRANSFORMACIÓN EN INDEX*/
+    .fotos:hover{
+        transform: scale(0.9,0.9);
+    }
+
+    ul{
+        flex-direction: row;
+    }
+
+    nav{
+        grid-area: menu;
+    }
+
+    main{
+        grid-area: contenido;
+        padding: 20px;
+    }
+
+    footer{
+        grid-area: footer;
+        
+    }
+    /*FIN HOME*/
+
+    /*CATALOGO*/
+    #grillaCatalogo{
+        display:grid;
+        grid-template-columns: 100% ;
+        grid-template-areas: 
+                             "menu"
+                             "contenido"
+                             "aside"
+                             "footer";
+        row-gap:20px;
+    }
+
+    .aside{
+        grid-area: aside;
+    }
+
+    /*INSTITUCIONAL*/
+    #grillaInstitucional{
+        display: grid;
+        grid-template-columns: 60% 30% 10%;
+        grid-template-areas: "menu menu menu"
+                                "editorial autoridades vacio"
+                             "editorial equipo vacio"
+                             "footer footer footer";
+        row-gap: 20px;
+        
+        
+    
+    }
+
+    #textoInstitucional{
+        grid-area: editorial;
+        padding: 20px;
+    }
+    
+    #autoridades{
+        grid-area: autoridades;
+        background-color: #cae8d5;
+        padding: 20px;
+        font-size: 14px;
+        
+    }
+    
+    #equipo{
+        grid-area: equipo;
+        background-color: #cae8d5;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+
+}
+
+
+
+

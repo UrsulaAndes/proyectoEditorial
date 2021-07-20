@@ -1,0 +1,67 @@
+/*ESTILO 1*/
+.footer{
+    background-color: #cae8d5;
+    /*GRADIENTE*/
+    background-image: linear-gradient(to bottom, #cae8d5 , #84A9AC);
+    padding: 20px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .footer__img{
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+    }
+}
+
+/*ESTILO 2*/
+.aside{
+    width: 50%;
+    margin-top: 100px;
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid #84A9AC;
+    padding: 20px;
+    text-align:left;
+
+    .aside__titulo{
+        font-size: 16px;
+    }
+    .aside__lista{
+        list-style: none;
+        margin:0;
+        padding-left: 0;
+
+        .aside__item{
+            margin-top:7px;
+            margin-bottom:7px;
+
+            .aside__item--negrita{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/*ESTILO 3*/
+.div{
+    width:50%;
+    background-color: #cae8d5;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+    
+    .div__mail{
+        text-align: center;
+        margin-bottom:0;
+        padding: 10px;
+        
+        .div__mail--negrita{
+            font-weight: bold ;
+            
+        }
+    }
+    
+}
